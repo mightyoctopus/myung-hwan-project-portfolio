@@ -1,4 +1,4 @@
-# Tarek Masryo — Portfolio
+# AI Engineer Portfolio
 
 Static portfolio website (HTML/CSS/JS) showcasing production-minded **ML** & **GenAI** projects and dashboards.
 
