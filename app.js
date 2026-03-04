@@ -1,3 +1,6 @@
+// Dev Log:
+// https://docs.google.com/document/d/1UcV3j0SPz234LIHQ1FlLSbyZExBTNKeA4g1aR2hYJWM/edit?tab=t.0
+
 (() => {
   'use strict';
 
@@ -249,6 +252,7 @@
       icon: 'lucide:file-text',
       type: 'Dataset',
       title: 'SEO Expert ChatBot (RAG)',
+      impact: "Outcome: RAG pipeline for an expert level of SEO-focused knowledge grounding.",
       desc: 'Implemented a RAG pipeline including document ingestion, structured chunking, embedding generation, and vector-based retrieval, followed by controlled context injection into the LLM. The knowledge base consisted of practitioner-grade SEO resources used in real-world agency settings rather than generic public content, in order to achieve an expert level of SEO insights in LLM responses.',
       priority: 90,
       problem:
@@ -1181,7 +1185,7 @@
         : Project.buildStack({ cat, type, title, desc, repo, tags: this.tags });
 
       this.impact =
-        typeof impact === 'string' ? impact : Project.buildImpact({ cat, type, title, desc });
+        typeof impact === 'string' ? impact : "";
     }
 
     static categoryLabel(cat) {
