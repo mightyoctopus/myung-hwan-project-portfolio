@@ -45,6 +45,8 @@
       ],
       tags: ['Multi-Agent Systems', 'LoRA/QLoRA',"LLM Evaluation", 'Decision Intelligence', "Dataset Curation"],
       repo: 'fraud-detection-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'Fraud Detection Dashboard',
     },
 
@@ -70,6 +72,8 @@
       ],
       stack: ["Python", "LLaMA 3.1", "Transformers", "QLoRA", "PEFT", "BitsAndBytes", "Hugging Face Dataset"],
       tags: ['Model Fine-Tuning ', 'LLM Regression', 'E-Commerce AI', "Marketplace Analytics"],
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       repo: 'hospital-deterioration-next-12h-early-warning-baseline',
       imageBase: 'hospital-deterioration-next-12h-early-warning',
     },
@@ -98,6 +102,8 @@
       stack: ['Python', 'Hugging Face Dataset', 'Pandas', 'Parquet', 'Data Cleaning', 'Plotly'],
       tags: ['Dataset Engineering', 'Data Processing ', 'ML Infrastructure'],
       repo: 'llm-system-ops-production-telemetry-sft-data',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'llm-system-ops-production-telemetry-sft-data',
     },
 
@@ -124,6 +130,8 @@
       stack: ['Python', 'LangChain', 'RAG',"Google Docs API",  'Gradio', 'Jupyter Lab'],
       tags: ['RAG',"Data Chunking", 'Data Retrieval', 'Domain AI'],
       repo: 'rag-qa-logs-corpus-data',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'RAG QA Logs & Corpus Data',
     },
 
@@ -150,6 +158,8 @@
       stack: ['Python', 'GPT-5-mini', 'DALL·E 3', 'gpt-4o-mini-transcribe', 'Claude 3.5 Haiku', 'Gradio'],
       tags: ['Multimodal AI', 'Speech Interfaces', 'Image Generation', "Frontier Model Integration"],
       repo: 'pima-diabetes-pipeline',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'pima-diabetes-pipeline',
     },
 
@@ -165,6 +175,8 @@
       priority: 10,
       tags: ['NLP', 'Classification', 'AI Detection'],
       repo: 'road-accident-risk',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'Road Accident Risk',
     },
 
@@ -180,6 +192,8 @@
       priority: 9,
       tags: ['LoRA Merging', 'Inference Optimization', "Model Checkpoints", 'Iterative Fine-Tuning'],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -195,6 +209,8 @@
       priority: 8,
       tags: ['Dataset Creation', 'Data Structuring', "Data Evaluation"],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -210,6 +226,8 @@
       priority: 7,
       tags: ['Multi-Agent Systems', 'Hierarchical Agent Architecture', "Agent Orchestration"],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -225,6 +243,8 @@
       priority: 6,
       tags: ['Web Scraping', 'LLM Content Automation', "Business Brochure"],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -240,6 +260,8 @@
       priority: 5,
       tags: ['Code Optimizer', 'AI-Assisted Development', "Dev Tools", "Performance Comparison"],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -255,6 +277,8 @@
       priority: 4,
       tags: ['API Integration', 'Automation', "Messaging Notification"],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -270,6 +294,8 @@
       priority: 3,
       tags: ['Browser Automation', 'Data Extraction'],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
 
@@ -285,6 +311,8 @@
       priority: 3,
       tags: ['Web Scraping', 'API Integration', "Automation"],
       repo: 'ev-charging-dashboard',
+      hfSpace: "https://example.com",
+      demo: "https://example.com",
       imageBase: 'EV Charging Dashboard',
     },
   ];
@@ -1055,6 +1083,8 @@
       title,
       desc,
       repo,
+      hfSpace,
+      demo,
       imageBase,
       priority,
       problem,
@@ -1071,6 +1101,8 @@
       this.title = title;
       this.desc = desc;
       this.repo = repo;
+      this.hfSpace = hfSpace;
+      this.demo = demo;
       this.imageBase = imageBase;
 
       const pr = Number(priority);
@@ -1578,14 +1610,48 @@
         tags.appendChild(chip);
       });
 
-      const a = document.createElement('a');
-      a.className = 'btn repo';
-      a.href = project.githubUrl;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.textContent = 'View Repo';
+      const btnContainer = document.createElement("div");
+      btnContainer.className = "p-buttons";
 
-      body.append(h, impact, d, tags, a);
+      // Buttons on Project Containers
+
+      if (project.repo) {
+        const gitRepo = document.createElement("a");
+        gitRepo.className = "btn repo";
+        gitRepo.href = project.githubUrl;
+        gitRepo.target = "_blank";
+        gitRepo.rel = "noopener noreferrer";
+        gitRepo.textContent = 'View Repo';
+        btnContainer.appendChild(gitRepo);
+      }
+
+      if (project.hfSpace) {
+        const hf = document.createElement("a");
+        hf.className = "btn repo";
+        hf.href = project.hfSpace;
+        hf.target = "_blank";
+        hf.rel = "noopener noreferrer";
+        hf.textContent = "HF Space";
+        btnContainer.appendChild(hf);
+      }
+
+      if (project.demo) {
+        const demo = document.createElement('a');
+        demo.className = "btn repo";
+        demo.href = project.demo;
+        demo.target = '_blank';
+        demo.rel = 'noopener noreferrer';
+        demo.textContent = 'View Demo';
+        btnContainer.appendChild(demo);
+      }
+
+//      a.className = 'btn repo';
+//      a.href = project.githubUrl;
+//      a.target = '_blank';
+//      a.rel = 'noopener noreferrer';
+//      a.textContent = 'View Repo';
+
+      body.append(h, impact, d, tags, btnContainer);
       card.append(typeBar, top, body);
 
       const openDetails = () => this.modal.open(project);
