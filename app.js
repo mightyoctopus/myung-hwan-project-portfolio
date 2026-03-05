@@ -16,7 +16,7 @@
       {
       cat: 'agentic_llm',
       icon: 'lucide:shield-check',
-      type: 'Dashboard',
+      type: 'Multi-Agent System',
       title: 'WorthBrain - Multi Agent System',
       impact: "Outcome: End-to-end agentic system for real-time price discovery of discounted deals online and push notification.",
       desc: 'Multi-agent architecture that collects deals from external sources, estimates fair value using ensemble models (Frontier + Fine-Tuned Open Source + Custom Neural Network Model), and surfaces high-confidence opportunities. Designed for modular experimentation and evaluation.',
@@ -53,7 +53,7 @@
     {
       cat: 'models',
       icon: 'lucide:building-2',
-      type: 'Healthcare ML',
+      type: 'Fine-Tuned LLM',
       title: 'Consumer Products Pricer Model — Fine-Tuned LLaMA 3.1 8B',
       impact: "Outcome: Fine-tuned domain-specific LLM model for structured product price estimation as a specialized E-Commerce valuation model.",
       desc: 'Fine-tuned LLaMA 3.1 8B using QLoRA with 4-bit quantization to efficiently adapt a general model to numeric price regression tasks and price prediction capability.',
@@ -110,7 +110,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:file-text',
-      type: 'Dataset',
+      type: 'RAG System',
       title: 'SEO Expert ChatBot (RAG)',
       impact: "Outcome: RAG pipeline for an expert level of SEO-focused knowledge grounding.",
       desc: 'Implemented a RAG pipeline including document ingestion via Google API, structured chunking, embedding generation, and vector-based retrieval, followed by controlled context injection into the LLM. The knowledge base consisted of practitioner-grade SEO resources used in real-world agency settings rather than generic public content, in order to achieve an expert level of SEO insights in LLM responses.',
@@ -138,7 +138,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:stethoscope',
-      type: 'ML Pipeline',
+      type: 'Multimodal System',
       title: 'Airline Customer Service Assistant ',
       impact: "Outcome: Multimodal airline customer service chatbot that provides ticket pricing, booking guidance, and destination info through unified text, voice, image, and multilingual interaction.",
       desc: 'Orchestrates speech-to-text transcription, LLM reasoning, translation, image generation, and text-to-speech synthesis within a single conversational workflow.',
@@ -166,7 +166,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:car',
-      type: 'Risk Model',
+      type: 'NLP Classifier',
       title: 'AI Written Text Detector',
       impact: "Outcome: AI-generated text detection with structured evaluation.",
       desc: 'Combines a RoBERTa-based classifier with an LLM to detect AI-generated text and provide explanation-driven analysis based on the detection result. The system integrates classification, reasoning, and structured output to make detection results more interpretable.',
@@ -183,7 +183,7 @@
     {
       cat: 'models',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'LLM Model Optimization',
       title: 'Pricer-Merged-Model-A-v1',
       impact: "Outcome: Merged QLoRA adapter weights into the base LLaMA model to produce a consolidated checkpoint that supports simplified inference and enables further fine-tuning from an improved baseline.",
       desc: 'Merged adapter weights using PEFT utilities, removing the need for runtime adapter loading and creating a new fully-integrated model suitable for iterative fine-tuning and downstream deployment.',
@@ -217,7 +217,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'Transcription AI',
       title: 'Minutes of Meeting Generator',
       impact: "Instantly generated well-structured summary of meeting minutes, converted  from a raw discussion audio file.(mp3 extension)",
       desc: 'Whisper-1 model transcribes an audio file into text and quantized Llama 3.1 model generates a well structured summary of business meeting minutes.',
@@ -235,7 +235,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'Multi-Agent System',
       title: 'AutoGen Blog Agents (Nested Chat)',
       impact: "Fully autonomous end-to-end blog generation workflow across multiple domains of expertise.",
       desc: 'Built a hierarchical multi-agent system using AutoGen where a Writer Agent generates content and a Critic Agent coordinates domain-specific reviewers (SEO, Legal, Ethics, Meta). Structured feedback aggregation and controlled refinement loops enable systematic content improvement.',
@@ -252,7 +252,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'LLM Application',
       title: 'Business Brochure Generator AI',
       impact: "Accurately generates structured, hallucination-free company brochures using LLM and web scraping",
       desc: 'AI-powered business brochure generator that creates structured company profiles from any given URL using GPT-5. The system integrates web scraping via BeautifulSoup (BS4) to extract factual content directly from the company’s website, grounding the LLM’s output in real source data and reducing hallucination.',
@@ -269,7 +269,7 @@
     {
       cat: 'agentic_llm',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'AI Developer Tool',
       title: 'Python Code Optimizer - Python to C++ Converter',
       impact: "Generates C++ implementations from Python scripts, with measurable improvements in execution time compared to the original code.",
       desc: 'Built an AI-assisted system that translates Python scripts into C++ using multiple LLM providers, streaming generated code in real time through Gradio UI interface. The application compiles and runs both the original Python and converted C++ code to verify correctness and compare execution time within a single workflow.',
@@ -286,7 +286,7 @@
     {
       cat: 'python_apps',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'Automation System',
       title: 'Cheapest Flight Deals Alert System',
       impact: "Outcome: Stay alerted for the cheapest flight ticket price whenever it comes below user-defined price cap.",
       desc: 'Flight price monitoring system that checks flight prices via Amadeus API, compares against Google Sheet price caps, and sends whatsapp notifications for the cheapest ticket and flight information.',
@@ -303,7 +303,7 @@
     {
       cat: 'python_apps',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'Web Automation',
       title: 'Booking.com Automation Bot',
       impact: "Outcome: Automated hotel search and data export using browser automation.",
       desc: 'Uses Selenium WebDriver to automate interaction with dynamically rendered Booking.com pages and extract structured hotel data. The system applies automated filtering based on user-defined preferences such as destination, star rating, and price range, and exports the tailored results to a CSV file.',
@@ -320,7 +320,7 @@
     {
       cat: 'python_apps',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'Web Automation',
       title: 'Spotify Automation with Billboard Songs',
       impact: "Outcome: Generates Spotify playlists automatically from historical Billboard data.",
       desc: 'Scrapes Billboard chart data using BeautifulSoup (BS4) and creates corresponding playlists programmatically via the Spotify API. The application runs in a CLI environment where users input a target date, after which the entire process is fully automated. (Data extraction, track matching, and playlist creation)',
