@@ -44,9 +44,9 @@
         "Gradio"
       ],
       tags: ['Multi-Agent Systems', 'LoRA/QLoRA',"LLM Evaluation", 'Decision Intelligence', "Dataset Curation"],
-      repo: 'fraud-detection-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'worthbrain',
+      hfSpace: "https://huggingface.co/spaces/MightyOctopus/worth-brain",
+      demo: "https://drive.google.com/file/d/1HCyEESXbye_O19zVpYNPEQuyCv4hVQXy/view?usp=sharing",
       imageBase: 'WorthBrain Main Page',
     },
 
@@ -72,9 +72,8 @@
       ],
       stack: ["Python", "LLaMA 3.1", "Transformers", "QLoRA", "PEFT", "BitsAndBytes", "Hugging Face Dataset"],
       tags: ['Model Fine-Tuning ', 'LLM Regression', 'E-Commerce AI', "Marketplace Analytics"],
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
-      repo: 'hospital-deterioration-next-12h-early-warning-baseline',
+      hfSpace: "https://huggingface.co/MightyOctopus/pricer-lora-ft-v3",
+      demo: "https://docs.google.com/document/d/1PwuOCS6wgO3MqKexnEdAqpVswXMqGilqKEuFyhUGk7M/edit?tab=t.0#heading=h.jb89avh7g4kj",
       imageBase: 'pricer-lora-ft-v3',
     },
 
@@ -101,9 +100,7 @@
       ],
       stack: ['Python', 'Hugging Face Dataset', 'Pandas', 'Parquet', 'Data Cleaning', 'Plotly'],
       tags: ['Dataset Engineering', 'Data Processing ', 'ML Infrastructure'],
-      repo: 'llm-system-ops-production-telemetry-sft-data',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      hfSpace: "https://huggingface.co/datasets/MightyOctopus/amazon-pricer-dataset-v2-0 ",
       imageBase: 'Amazon-Pricer-Dataset-v2-0',
     },
 
@@ -129,9 +126,9 @@
       ],
       stack: ['Python', 'LangChain', 'RAG',"Google Docs API",  'Gradio', 'Jupyter Lab'],
       tags: ['RAG',"Data Chunking", 'Data Retrieval', 'Domain AI'],
-      repo: 'rag-qa-logs-corpus-data',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'seo-specialist-chatbot-rag-langchain',
+      hfSpace: "https://huggingface.co/spaces/MightyOctopus/seo-expert-chatbot",
+      demo: "https://drive.google.com/file/d/1Q850jOtNC7sA9GbBXdDGhKtIgm8S0e9f/view?usp=sharing",
       imageBase: 'SEO Expert ChatBot (RAG)',
     },
 
@@ -157,9 +154,9 @@
       ],
       stack: ['Python', 'GPT-5-mini', 'DALL·E 3', 'gpt-4o-mini-transcribe', 'Claude 3.5 Haiku', 'Gradio'],
       tags: ['Multimodal AI', 'Speech Interfaces', 'Image Generation', "Frontier Model Integration"],
-      repo: 'pima-diabetes-pipeline',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'airline-assistant-multimodal-chatbot',
+      hfSpace: "https://multimodal-airline-assistant-chatbot-tz4bz6sg6q-uc.a.run.app/",
+      demo: "https://drive.google.com/file/d/1qrb1FjtkxlTXUutg3jFG2vDpQpxyBXA_/view?usp=sharing",
       imageBase: 'Multimodal Airline Chatbot',
     },
 
@@ -174,9 +171,9 @@
       stack: ["Python", "HF Transformers", "RoBERTa", "LangChain", "LangGraph", "Gradio"],
       priority: 10,
       tags: ['NLP', 'Classification', 'AI Detection'],
-      repo: 'road-accident-risk',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'ai-written-text-detector',
+      hfSpace: "https://huggingface.co/spaces/MightyOctopus/ai-written-text-detector",
+      demo: "https://drive.google.com/file/d/1aPMDEQEAK2Q_dWiI0agxqyo4KTF5259R/view?usp=sharing",
       imageBase: 'Ai Written Text Detector LLM Image',
     },
 
@@ -191,9 +188,8 @@
       stack: ["Python", "Hugging Face Transformers", "PEFT", "QLoRA", "LLaMA 3.1"],
       priority: 9,
       tags: ['LoRA Merging', 'Inference Optimization', "Model Checkpoints", 'Iterative Fine-Tuning'],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      hfSpace: "https://huggingface.co/MightyOctopus/pricer-merged-model-A-v1",
+      demo: "https://docs.google.com/document/d/1PwuOCS6wgO3MqKexnEdAqpVswXMqGilqKEuFyhUGk7M/edit?tab=t.0#heading=h.ftj1ap51kmq",
       imageBase: 'Llama 3.1 8b Merged Model',
     },
 
@@ -208,9 +204,7 @@
       stack: ["Python", "Hugging Face Datasets", "Hugging Face Hub", "NumPy", "Matplotlib"],
       priority: 8,
       tags: ['Dataset Creation', 'Data Structuring', "Data Evaluation"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      hfSpace: "https://huggingface.co/datasets/MightyOctopus/amazon-pricer-dataset",
       imageBase: 'Amazon Dataset V1',
     },
 
@@ -225,9 +219,9 @@
       stack: ["Python", "OpenAI Whisper-1", "LLaMA 3.1 8B", "HF Transformers", "Gradio"],
       priority: 8,
       tags: ['Summarization', 'Productivity Tools', "Audio Transcription LLM"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'business-meeting-minutes-generator',
+      hfSpace: "https://huggingface.co/spaces/MightyOctopus/minutes-of-meeting-generator",
+      demo: "https://drive.google.com/file/d/1KKL-vJAxOIi174DYlj6o8WYSRdRyF8pk/view?usp=sharing",
       imageBase: 'Minutes of meeting generator screenshot',
     },
 
@@ -243,9 +237,8 @@
       stack: ["Python", "AutoGen", "OpenAI API"],
       priority: 7,
       tags: ['Multi-Agent Systems', 'Hierarchical Agent Architecture', "Agent Orchestration"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'autogen_blog_agents_nested_chat',
+      demo: "https://drive.google.com/file/d/16-WKT2TWD6rQqH1JLRsG-f6e1HnszAI5/view?usp=sharing",
       imageBase: 'multi agent blog writing system',
     },
 
@@ -260,9 +253,9 @@
       stack: ["Python", "BeautifulSoup", "OpenAI API", "Streamlit"],
       priority: 6,
       tags: ['Web Scraping', 'LLM Content Automation', "Business Brochure"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'business_brochure_generator_ai',
+      hfSpace: "https://business-brochure-maker-ai-731852872245.us-central1.run.app/",
+      demo: "https://drive.google.com/file/d/1TgnIvIHPrCZP3cJlDdsLETF2e9CV4Za0/view?usp=sharing",
       imageBase: 'business_brochure_maker_ai_main_page',
     },
 
@@ -277,9 +270,9 @@
       stack: ["Python", "OpenAI API", "Google Gemini API", "C++ Compilation", "Gradio"],
       priority: 5,
       tags: ['Code Optimizer', 'AI-Assisted Development', "Dev Tools", "Performance Comparison"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'llm-powered-python-to-cpp-code-converter',
+      hfSpace: "https://huggingface.co/spaces/MightyOctopus/python-to-cpp-code-optimizer",
+      demo: "https://drive.google.com/file/d/1TmJvlqpq0uH14oL2JINwTh9trgiiyOJo/view?usp=sharing",
       imageBase: 'Python to C++ Code Converter Portfolio Main',
     },
 
@@ -294,9 +287,8 @@
       stack: ["Python", "REST APIs", "Amadeus API", "Twilio API", "Sheety API"],
       priority: 4,
       tags: ['API Integration', 'Automation', "Messaging Notification"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'cheapest-flight-deals-alert-app',
+      demo: "https://drive.google.com/file/d/1FGTgT_cmmeI_87btlvs5cFOIccOOqBBv/view?usp=drive_link",
       imageBase: 'Flight Ticket Deal Notification System',
     },
 
@@ -311,9 +303,7 @@
       stack: ["Python", "Selenium", "Pandas", "CSV Export"],
       priority: 3,
       tags: ['Browser Automation', 'Data Extraction'],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'booking.com-automation-bot',
       imageBase: 'Booking.com Hotel Booking Automation',
     },
 
@@ -328,9 +318,7 @@
       stack: ["Python", "Spotify API", "Beautiful Soup "],
       priority: 3,
       tags: ['Web Scraping', 'API Integration', "Automation"],
-      repo: 'ev-charging-dashboard',
-      hfSpace: "https://example.com",
-      demo: "https://example.com",
+      repo: 'spotify-automation-with-billboard-songs',
       imageBase: 'Spotify Playlist Automation Portfolio Main',
     },
   ];
@@ -685,7 +673,7 @@
 
   class Github {
     static url(repo) {
-      return `https://github.com/tarekmasryo/${repo}`;
+      return `https://github.com/mightyoctopus/${repo}`;
     }
   }
 
@@ -1306,6 +1294,7 @@
       return out.slice(0, 7);
     }
     get githubUrl() {
+    if (!this.repo) return null;
       return Github.url(this.repo);
     }
 
