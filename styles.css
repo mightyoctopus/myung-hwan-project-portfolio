@@ -1366,13 +1366,19 @@ nav {
   outline-offset: 4px;
 }
 
+.social-row .social-link {
+  flex: 1;
+  justify-content: center;
+}
+
 .social-row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 14px;
   margin: 18px auto 0;
+  max-width: 420px;
 }
+
 .social-link {
   --brand: var(--txt);
   display: flex;
