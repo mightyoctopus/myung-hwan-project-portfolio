@@ -39,11 +39,11 @@
     <meta content="website" property="og:type" />
     <meta content="MyungHwan Hong — AI Engineer" property="og:title" />
     <meta
-      content="Decision-ready, evaluation-first AI systems: deployable APIs, dashboards, monitoring, and observability."
+      content="Multi-agent systems, RAG architectures, and fine-tuned LLMs focused on automated decision-making in real-world applications."
       property="og:description"
     />
     <meta content="https://mightyoctopus.github.io/myung-hwan-portfolio/" property="og:url" />
-    <meta content="https://mightyoctopus.github.io/myung-hwan-portfolio/assets/logo.png" property="og:image" />
+    <meta content="https://mightyoctopus.github.io/myung-hwan-portfolio/assets/logo-resized.png" property="og:image" />
     <meta content="1201" property="og:image:width" />
     <meta content="631" property="og:image:height" />
     <meta content="summary_large_image" name="twitter:card" />
@@ -52,7 +52,7 @@
       content="MyungHwan Hong — AI Engineer building multi-agent systems, RAG architectures, and fine-tuned LLMs focused on automated decision-making in real-world applications."
       name="twitter:description"
     />
-    <meta content="https://mightyoctopus.github.io/myung-hwan-portfolio/assets/logo.png" name="twitter:image" />
+    <meta content="https://mightyoctopus.github.io/myung-hwan-portfolio/assets/logo-resized.png" name="twitter:image" />
     <title>MyungHwan Hong — AI Engineer</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -77,16 +77,18 @@
           "https://huggingface.co/MightyOctopus"
         ],
         "knowsAbout": [
-          "machine learning",
+          "agent systems",
           "generative ai",
           "retrieval augmented generation",
-          "mlops",
+          "hugging face transformers",
           "decision systems",
-          "fastapi",
+          "langgraph",
+          "langchain",
           "pytorch",
-          "postgresql",
           "vector search",
-          "monitoring"
+          "lora",
+          "QLoRA",
+          "scikit-learn"
         ]
       }
     </script>
@@ -96,20 +98,15 @@
     <canvas aria-hidden="true" id="bgCanvas"></canvas>
     <div aria-hidden="true" class="scroll-progress" id="scrollProgress"></div>
     <nav aria-label="Primary">
+<!--      ********LOGO*******-->
       <div class="nav" id="navBar" role="navigation">
         <button aria-label="Go Home" class="brand" id="brandHome" title="Go Home" type="button">
-          <picture>
-            <source srcset="assets/tm-mark.svg?v=20260203_3" type="image/svg+xml" />
-            <img
-              class="brand-logo"
-              src="assets/tm-mark-88.png?v=20260203_3"
-              srcset="assets/tm-mark-88.png?v=20260203_3 1x, assets/tm-mark-176.png?v=20260203_3 2x"
-              alt="TM"
-              width="44"
-              height="44"
-              decoding="async"
-            />
-          </picture>
+          <img
+            class="brand-logo"
+            src="assets/logo-resized.png"
+            alt="MH"
+            decoding="async"
+          />
         </button>
         <div class="navlinks" id="navLinks">
           <a class="active" href="#home">Home</a>
