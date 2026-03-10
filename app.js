@@ -1299,6 +1299,13 @@
       return Github.url(this.repo);
     }
 
+    get detailsUrl() {
+      if (this.repo) return Github.url(this.repo);
+      if (this.hfSpace) return this.hfSpace;
+      if (this.demo) return this.demo;
+      return null;
+    }
+
     matchesQuery(q) {
       const query = (q || '').trim().toLowerCase();
       if (!query) return true;
@@ -1392,7 +1399,7 @@
       this.setTags(this.stackEl, Array.isArray(project.stack) ? project.stack : null);
 
       if (this.repoEl) {
-        this.repoEl.href = project.githubUrl;
+        this.repoEl.href = project.detailsUrl;
         this.repoEl.style.display = 'inline-flex';
       }
 
