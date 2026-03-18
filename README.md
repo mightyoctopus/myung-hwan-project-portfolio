@@ -2,8 +2,8 @@
 
 Static portfolio website (HTML/CSS/JS) designed for AI engineering.
 
-**Live:** https://mightyoctopus.github.io/myung-hwan-portfolio/
-
+**Live:** https://mightyoctopus.github.io/myung-hwan-project-portfolio/
+ 
 ---
 
 ## Local run
