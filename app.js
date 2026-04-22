@@ -20,7 +20,7 @@
       title: 'WorthBrain - Multi Agent System',
       impact: "Outcome: End-to-end agentic system for real-time price discovery of discounted deals online and push notification.",
       desc: 'Multi-agent architecture that collects deals from external sources, estimates fair value using ensemble models (Frontier + Fine-Tuned Open Source + Custom Neural Network Model), and surfaces high-confidence opportunities. Designed for modular experimentation and evaluation.',
-      priority: 15,
+      priority: 16,
       problem:
         'How can multiple LLMs and fine-tuned open-source models be orchestrated into a reproducible decision system that identifies genuinely underpriced products from the online?',
       approach: [
@@ -49,6 +49,51 @@
       hfSpace: "https://huggingface.co/spaces/MightyOctopus/worth-brain",
       demo: "https://drive.google.com/file/d/1HCyEESXbye_O19zVpYNPEQuyCv4hVQXy/view?usp=sharing",
       imageBase: 'WorthBrain Main Page',
+    },
+
+          {
+      cat: 'agentic_llm',
+      icon: 'lucide:shield-check',
+      type: 'LLM-Automation-System',
+      title: 'LLM-Powered Job Search Automation',
+      impact: "Outcome: Fully automated system that discovers, filters, evaluates, and exports relevant AI job opportunities from the web into structured outputs (Google Sheets).",
+      desc: 'A pipeline-based LLM-powered system that automates job discovery by integrating multi-source search, rule-based filtering, adaptive scraping, and LLM-driven evaluation. Designed to reduce manual effort in identifying high-quality AI/LLM roles, with a focus on remote opportunities and relevance to specific technical domains.',
+      priority: 15,
+      problem:
+        'How can job discovery be automated in a way that reliably identifies relevant AI roles from noisy web data, while balancing accuracy, cost, and the need for human review?',
+      approach: [
+        "Generate targeted search queries using an LLM (Google operators + semantic queries).",
+        "Aggregate results from multiple so  uplicates, irrelevant domains, and low-value roles before expensive processing.",
+        "Use adaptive scraping with fallback browser automation (Playwright) to handle dynamic or incomplete pages.",
+        "Evaluate job relevance using LLM-based reasoning with structured outputs and manual-review fallback.",
+      ],
+      signals: [
+        "Number of relevant jobs surfaced vs total collected (precision)",
+        "Manual review rate for ambiguous or low-confidence cases",
+        "Scraping success rate and recovery rate via browser automation",
+        "End-to-end pipeline efficiency (jobs processed vs kept)",
+      ],
+      stack: [
+          'Python',
+          'AsyncIO',
+          'OpenAI API',
+          'SerpAPI',
+          'Exa API',
+          'Playwright',
+          'BeautifulSoup',
+          'Requests',
+          'gspread (Google Sheets)',
+      ],
+      tags: [
+          'LLM Systems',
+          'Automation Pipelines',
+          'Web Scraping',
+          'LLM Evaluation',
+          'Async Processing',
+      ],
+      repo: 'automated-job-discovery-agentic-system',
+      demo: "https://drive.google.com/file/d/1Vl3OONpfAYiVYzdSJE9nN-MDNDZKNqyQ/view?usp=drive_link",
+      imageBase: 'automated_job_search_llm',
     },
 
     {
@@ -1135,6 +1180,7 @@
         agentic_llm: 'agentic_llm',
         models: 'models',
         datasets: 'datasets',
+        llm_system: 'LLM Systems',
         python_apps: 'python_apps & Tools',
       };
       return map[cat] || 'Project';
@@ -1519,6 +1565,7 @@
       this.projects = new ProjectCollection(PROJECTS_RAW.map((p) => new Project(p)));
       this.modal = new ProjectModal(Dom.id('projectModal'));
 
+      // Type writer on the header area
       this.typewriter = new Typewriter({
         el: Dom.id('heroLoop'),
         lines: [
